@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Just For You</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="main.css" />
+	</head>
+	<body>
+        <video id="myAudio" width="320" height="240">
+            <source src="video.mov" type="video/mp4">
+            <source src="video.mov" type="video/ogg">
+        </video>
+        <div id="div2" onclick="aud_play_pause()">🖤&nbsp;&nbsp;<div id="div3" onclick="next()">>></div></div>
+
+            <script>
+                function aud_play_pause() {
+                  var myAudio = document.getElementById("myAudio");
+                  if (myAudio.paused) {
+                    myAudio.play();
+                  } else {
+                    myAudio.pause();
+                  }
+                }
+                function next() {
+            window.location.href = "index.html";
+        }
+            </script>
+	</body>
+</html>
